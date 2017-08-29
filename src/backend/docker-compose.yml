@@ -1,0 +1,42 @@
+version: "2.1"
+services:
+  blog_db:
+    build: ./db/
+    container_name: nick_blog.postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=practice1234
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: exit 0
+
+  blog_app:
+    container_name: nick_blog.app
+    build: ./app/
+    volumes:
+      - .:/usr/app
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3000
+      - NODE_ENV=development
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=practice1234
+      - POSTGRES_PORT=5432
+      - POSTGRES_URL=nick_blog.postgres
+    depends_on:
+      blog_db:
+        condition: service_healthy
+    links:
+      - blog_db
+
+volumes:
+  pgdata: {}
+
+networks:
+  default:
+    external:
+      name: nick_blog
