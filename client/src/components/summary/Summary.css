@@ -1,0 +1,26 @@
+#Summary{
+  text-align: center;
+  font-family: serif;
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+
+#title {
+  color: inherit;
+  font-size: 2em;
+  font-style: bold;
+  text-decoration: underline;
+}
+
+#date-category{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#cat {
+  text-transform:capitalize;
+}
+
+#text {
+  color:  #888888;
+}

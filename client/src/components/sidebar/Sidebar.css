@@ -1,0 +1,44 @@
+#Sidebar{
+  background: #bdbdbd;
+  text-align: center;
+  padding: 5px;
+  border-radius:15px;
+}
+
+.headshot{
+  border-radius: 50%;
+  max-width:95%;
+  max-height:95%;
+  border: 5px solid #ffffff;
+}
+
+#nav-brand-text{
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2em;
+  margin-left: 10px;
+  margin-right:10px;
+}
+
+#nav-link{
+  color: #ffffff;
+  height: 100%;
+  width:100%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.15em;
+  margin-top: 5px;
+  margin-bottom:5px;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited{
+  text-decoration: none;
+  color: #ffffff;
+}

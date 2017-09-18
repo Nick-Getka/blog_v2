@@ -1,0 +1,32 @@
+.Latest{
+  font-family: serif;
+}
+
+#latest-header{
+  font-size: 3.5em;
+  font-style: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+#latest-title{
+  text-decoration: underline;
+}
+
+
+#latest-date-category{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1em;
+}
+
+#latest-cat {
+  text-transform:capitalize;
+}
+
+#latest-text {
+  color:  #888888;
+  line-height: 2em;
+  font-size: 1.25em;
+  padding-bottom: 75px;
+}

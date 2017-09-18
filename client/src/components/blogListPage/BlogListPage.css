@@ -1,0 +1,17 @@
+.blogheader{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 3em;
+  font-family: serif;
+}
+
+.buttontoolbar{
+  text-align:center;
+  padding: 30px;
+  width:100%;
+}
+
+#togglebutton{
+  margin-left: 5px;
+  margin-right: 5px;
+}

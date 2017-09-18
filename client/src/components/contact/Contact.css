@@ -1,0 +1,15 @@
+.Contact{
+  font-family: serif;
+}
+
+#contact-header{
+  font-size: 3.5em;
+  font-style: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+#contacts{
+  padding: 10px;
+  font-size: 1.25em;
+}

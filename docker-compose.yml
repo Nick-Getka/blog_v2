@@ -1,0 +1,36 @@
+version: "2.1"
+services:
+  blog_db:
+    build: ./server/db/
+    container_name: nick_blog.postgres
+    ports:
+      - "5432:5432"
+    env_file:
+      - ./.env
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: exit 0
+
+  blog_app:
+    build: ./server/app/
+    container_name: nick_blog.app
+    volumes:
+      - .:/usr/app
+    ports:
+      - "3001:3001"
+    env_file:
+      - ./.env
+    depends_on:
+      blog_db:
+        condition: service_healthy
+    links:
+      - blog_db
+
+volumes:
+  pgdata: {}
+
+networks:
+  default:
+    external:
+      name: nick_blog
