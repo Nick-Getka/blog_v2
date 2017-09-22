@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ServerError from '../serverError/ServerError';
 import Summary from '../summary/Summary';
 
 class BlogList extends Component {

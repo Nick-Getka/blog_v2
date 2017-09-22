@@ -3,7 +3,6 @@ import {Col, Row} from 'react-bootstrap';
 import { Switch, Route } from 'react-router-dom';
 
 import Latest from '../latest/Latest';
-import About from '../about/About';
 import Contact from '../contact/Contact';
 
 import './Welcome.css';
@@ -23,7 +22,7 @@ class Welcome extends Component {
             </Switch>
           </Col>
           <Col xsHidden sm={5}>
-            <img src='./img/nlogo.png' id="nlogo" />
+            <img src='./img/nlogo.png' id="nlogo" alt="nlogo"/>
           </Col>
         </Row>
         <Row id="subheader">

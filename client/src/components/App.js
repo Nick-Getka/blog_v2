@@ -13,7 +13,6 @@ import Welcome from './welcome/Welcome';
 import BlogListPage from './blogListPage/BlogListPage';
 import PostPage from './postPage/PostPage';
 import About from './about/About';
-import Contact from './contact/Contact';
 import NoMatch from './noMatch/NoMatch';
 
 import {Grid, Row} from 'react-bootstrap';
