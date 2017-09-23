@@ -60,19 +60,6 @@ function getPostByID(req, res, next){
   });
 }
 
-function getPostByTitle(req, res, next){
-  var postTitle = req.params.title;
-  console.log(postTitle)
-  blog_db.one('SELECT * FROM posts WHERE post_title = $1;', postTitle)
-  .then(function (data) {
-    res.status(200)
-    .json(data);
-  })
-  .catch(function (err) {
-    return next(err);
-  });
-}
-
 
 
 module.exports = {
